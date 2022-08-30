@@ -1,0 +1,214 @@
+@font-face {
+    font-family: D-DIN;
+    src: local('D-DIN'),
+        url("/font/d-din/D-DIN.otf")format('opentype');
+}
+
+@font-face {
+    font-family: D-DIN;
+    src: local('D-DIN Bold'),
+        url("/font/d-din/D-DINExp-Bold.otf")format('opentype');
+    font-weight: bold;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'D-DIN', sans-serif;
+
+}
+
+.fill-white {
+    fill: #fff;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background: url("https://www.spacex.com/static/images/backgrounds-2022/t-mobile/post-announcement/Homepage_Desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2%;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+nav svg {
+    top: 32px;
+    left: 100px;
+    width: 210px;
+    margin: 0 30px 0 80px;
+}
+
+nav .nav-links {
+    text-align: left;
+
+}
+
+.nav-links ul li {
+    justify-content: flex-start;
+    list-style: none;
+    display: inline-block;
+    margin: 8px 18px 2px 0;
+    position: relative;
+    justify-content: space-around;
+
+}
+
+nav .end {
+    margin-left: auto;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 13.5px;
+    letter-spacing: -0.3px;
+}
+.nav-links li i{
+    color: #fff;
+}
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.content {
+    width: 50%;
+    max-width: 520px;
+    position: absolute;
+    bottom: 20%;
+    left: 100px;
+    color: #fff;
+    text-align: left;
+}
+
+.content h2 {
+    text-shadow: 0 0 2px #555;
+    padding-bottom: 45px;
+    max-width: 90%;
+    margin-left: 0;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.content a{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 35px 15px;    
+    transition: all 0.4s;
+    transform-origin: up;
+}
+
+.content a:hover, .up:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+    color: black;
+    
+}
+.content a{
+    --color: #f7f7f7;
+    --hover: #ffffff;
+}
+.content p{
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 20px;
+    transform: translate3d(0px, 0px, 0px);
+}
+.body2{
+    width: 100%;
+    min-height: 100vh;
+    background: url("https://www.spacex.com/static/images/backgrounds-2022/sl4-23/pre-launch/Homepage_Desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.body3{
+    width: 100%;
+    min-height: 100vh;
+    background: url("https://www.spacex.com/static/images/backgrounds-2022/kplo/post-launch/Homepage_Desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.body4{
+    width: 100%;
+    min-height: 100vh;
+    background: url("https://www.spacex.com/static/images/backgrounds-2022/starship-update/S20_Chopstick_Stack_Desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.body5{
+    width: 100%;
+    min-height: 100vh;
+    background: url("https://www.spacex.com/static/images/backgrounds-2021/hls-resized-2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.footer{
+    padding: 23px 0;
+    width: 100%;
+    background: #000;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+.footer ul li{
+    color: #fff;
+    display: inline-flex;
+    position: relative;
+    margin: 20px 20px;
+    
+}
+.footer ul li span{
+    font-size: 12px;
+    color: #8b939b;
+
+}
+.footer ul li a{    
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: 0.5s;
+    letter-spacing: -0.5px;
+    
+}
+.footer ul li a:hover{
+    color: #8b939b;
+}
